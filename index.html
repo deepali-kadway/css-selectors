@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <!-- 2: Internal Styling: defines stules that apply to entire webpage for selected tags -->
+    <style>
+      /* 
+        syntax:
+            tag { property: value; }
+    */
+
+      /* ID selector(#): selecting a specific element by its unique identifier */
+      #para1 {
+        /* style rules go in here */
+        color: green;
+      }
+
+      /* element selector (tag name): selecting all h4 tags */
+      h4 {
+        color: greenyellow;
+      }
+
+      /* class selector(.): selecting all elements with a specified class name.
+        We can name a class anything we want and use it within the class attribute on an element.
+      */
+      .sub-heading {
+        background-color: antiquewhite;
+      }
+
+      .sub-heading-font {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
     <h1>CSS Selectors</h1>
-</body>
+    <!-- 1: Inline Styling: define styles within a tag -->
+    <h3 class="sub-heading sub-heading-font" style="color: blue">
+      What is CSS?
+    </h3>
+    <p id="para1">
+      CSS stands for Cascading Style Sheets. CSS can be used to style webpages
+      with color, font, positioning, spacing, sizing, decoration, and
+      transitions.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet minus,
+      sequi amet voluptas nobis architecto dignissimos maxime, neque earum
+      libero, voluptate debitis itaque nam impedit.
+    </p>
+    <h3 class="sub-heading">Lorem ipsum dolor sit amet.</h3>
+    <h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quo.
+    </h4>
+    <h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero
+      numquam aperiam.
+    </h4>
+  </body>
 </html>
